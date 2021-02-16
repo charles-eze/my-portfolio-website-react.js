@@ -5,7 +5,11 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+    transitionDelay: ['hover'],
+    transitionDuration: ['hover'],
+    transitionProperty: ['hover'],
+    },
   },
   plugins: [],
 }
