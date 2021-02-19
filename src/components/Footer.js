@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
     return (
-        <footer className='flex justify-between items-center h-16 bg-gray-700 font-normal text-sm md:text-base lg:text-base text-white bottom-0 absolute w-full'>
+        <footer className='flex justify-between items-center h-16 bg-gray-700 font-normal text-sm md:text-base lg:text-base text-white bottom-0 w-full'>
             <p className='lg:ml-14 sm:ml-2'> <i className="far fa-copyright text-base"></i> 2021, Charles Eze</p>
             <div className='lg:mr-20 sm:mr-1'>
                 <SocialIcon 
