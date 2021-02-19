@@ -6,7 +6,7 @@ export default function Dropdown({ click, handleClick, closeMobileMenu }) {
 
     return (
         <div className='relative flex'>
-            <div className={click ? 'grid block -mb-64 pt-6 pb-2 z-50 grid-rows-5 absolute border-b w-full inset-0 w-full top-full justify-items-start text-gray-800 box-border gap-10 text-based pr-32 pl-3 bg-gray-100' : 'hidden'} onCLick={handleClick}>
+            <div className={click ? 'grid -mb-64 pt-6 pb-2 z-50 grid-rows-5 absolute border-b inset-0 w-full top-full justify-items-start text-gray-800 box-border gap-10 text-based pr-32 pl-3 bg-gray-100' : 'hidden'} onCLick={handleClick}>
                 <NavLink className='-mt-1 border-b w-full border-purple-400 hover:bg-purple-500 hover:text-white max-h-7 rounded-full font-sans font-medium px-2 -my-2' to='/' onClick={closeMobileMenu}>
                     Portfolio
                 </NavLink>

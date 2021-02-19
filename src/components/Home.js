@@ -20,7 +20,7 @@ export default function Home() {
                     </p>
                 </div>
                 </div>
-                <div className='mt-3 py-16 -mt-20 md:mr-5 px-7 md:pb-52 md:px-28 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-75'>
+                <div className='py-16 -mt-20 md:mr-5 px-7 md:pb-52 md:px-28 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-75'>
                     <div className='relative'>
                         <div className='inset-0'>
                                 <img src={image} 
