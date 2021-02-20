@@ -148,7 +148,7 @@ export default function Home() {
             <div className='pb-7'>
 
             </div>
-            <div className='-mt-7 pb-7'>
+            <div id='contact' className='-mt-7 pb-7'>
                 <Contact />
             </div>
             

@@ -15,10 +15,15 @@ import Dropdown from "./components/Dropdown";
 function App() {
 
   const [click, setClick] = useState(false);
+  
 
   const handleClick = () => setClick(!click);
 
   const closeMobileMenu = () => setClick(false);
+
+ 
+  const changePath = () => setClick(false);
+
 
   useEffect(() => {
     const hideMenu = () => {
@@ -35,7 +40,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <NavBar handleClick={handleClick} click={click}/>
+    <NavBar handleClick={handleClick} click={click} changePath={changePath} />
     <Dropdown handleClick={handleClick} click={click} closeMobileMenu={closeMobileMenu} />
       <Switch>
         <Route component={Home} path='/' exact />

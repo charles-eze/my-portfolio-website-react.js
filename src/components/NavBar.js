@@ -33,11 +33,11 @@ export default function NavBar({ click, handleClick }) {
                          activeClassName='bg-gray-400 text-white'>
                     About Me
                 </NavLink>
-                <NavLink className='px-4 py-1 hover:bg-purple-500 hover:text-white rounded-full' 
-                         to='/contact'
+                <a className='px-4 py-1 hover:bg-purple-500 hover:text-white rounded-full' 
+                         href='#contact' 
                          activeClassName='bg-gray-400 text-white'>
                     Contact Me
-                </NavLink>
+                </a>
 
             </div>
 

@@ -19,9 +19,9 @@ export default function Dropdown({ click, handleClick, closeMobileMenu }) {
                 <NavLink className='border-b w-full border-purple-400 hover:bg-purple-500 max-h-7 rounded-full hover:text-white font-sans font-medium px-2 -my-2' to='/about' onClick={closeMobileMenu}>
                     About Me
                 </NavLink>
-                <NavLink className='border-b w-full border-purple-500 hover:bg-purple-500 max-h-7 hover:text-white rounded-full font-sans font-medium px-2 -my-2' to='/contact' onClick={closeMobileMenu}>
+                <a className='border-b w-full border-purple-500 hover:bg-purple-500 max-h-7 hover:text-white rounded-full font-sans font-medium px-2 -my-2' href='#contact' onClick={closeMobileMenu}>
                     Contact Me
-                </NavLink>
+                </a>
             </div>
         </div>
     )
