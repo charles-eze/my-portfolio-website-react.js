@@ -3,9 +3,9 @@ import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
     return (
-        <footer className='flex justify-between items-center h-16 bg-gray-700 font-normal text-sm md:text-base lg:text-base text-white bottom-0 w-full'>
-            <p className='lg:ml-14 sm:ml-2'> <i className="far fa-copyright text-base"></i> 2021, Charles Eze</p>
-            <div className='lg:mr-20 sm:mr-1'>
+        <footer className='flex justify-between items-center h-16 bg-gray-700 font-normal text-sm md:text-base fixed z-10 lg:text-base text-white bottom-0 w-full'>
+            <p className='lg:ml-14 ml-2'> <i className="far fa-copyright text-base"></i> 2021, Charles Eze</p>
+            <div className='lg:mr-20 mr-2'>
                 <SocialIcon 
                     url='https://www.linkedin.com/in/charles-eze-29432b17a/' 
                     className='mr-1 md:mr-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125' 
@@ -24,6 +24,7 @@ const Footer = () => {
                     url='https://github.com/charles-eze' 
                     className='mr-1 md:mr-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125' 
                     target='_blank' 
+                    fgColor='#fff'
                     style={{ height:33, width:33}} />              
             </div>
         </footer>
