@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
 import image from "../profile_pics1.jpg";
 import Contact from "./Contact";
+import Roll from 'react-reveal/Roll';
 
 
 export default function Home() {
@@ -34,48 +35,54 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className='px-6 -mt-24 md:mt-8 md:-mt-5 mx-auto lg:px-0 max-w-xl lg:max-w-3xl'>
+            <section className='px-6 -mt-24 md:-mt-5 mx-auto lg:px-0 max-w-xl lg:max-w-3xl'>
                 <ul className='grid mt-16 gap-y-4 md:text-lg lg:grid-cols-2 lg:gap-x-12 lg:gap-y-16'>
                     <li style={{opacity: 1, transform: 'none'}}>
                         <div className=' font-sans'>
-                            <h2 className='flex items-center text-2xl space-x-2 no-underline font-bold'>
-                                <NavLink to='/project' 
-                                className='text-gray-900 hover:text-blue-900 hover:underline '> Projects </NavLink>
-                                <span className='mt-1'>></span>
-                            </h2>
-                            <div className='prose text-base mt-2 md:mt-4 lg:mt-6 md:prose-lg'>
-                                <p>
-                                A few of the projects I've developed and collaborated on. I currently work as a freelance developer specialized in React, JavaScript and all things
-                                </p>
-                            </div>
+                            <Roll left ssrFadeout>
+                                <h2 className='flex items-center text-2xl space-x-2 no-underline font-bold'>
+                                    <NavLink to='/project' 
+                                    className='text-gray-900 hover:text-blue-900 hover:underline '> Projects </NavLink>
+                                    <span className='mt-1'>{'>'}</span>
+                                </h2>
+                                <div className='prose text-base mt-2 md:mt-4 lg:mt-6 md:prose-lg'>
+                                    <p>
+                                        A few of the projects I've developed and collaborated on. I currently work as a freelance developer specialized in React, JavaScript and all things
+                                    </p>
+                                </div>
+                            </Roll>
                         </div>
                     </li>
                     <li style={{opacity: 1, transform: 'none'}}>
                         <div className=' font-sans'>
-                            <h2 className='flex items-center text-2xl space-x-2 no-underline font-bold'>
-                                <NavLink to='/post' 
-                                className='text-gray-900 hover:text-blue-900 hover:underline '> Blog </NavLink>
-                                <span className='mt-1'>></span>
-                            </h2>
-                            <div className='prose text-base mt-2 md:mt-4 lg:mt-6 md:prose-lg'>
-                                <p>
-                                A few of the projects I've developed and collaborated on. I currently work as a freelance developer specialized in React, JavaScript and all things
-                                </p>
-                            </div>
+                            <Roll right ssrFadeout>
+                                <h2 className='flex items-center text-2xl space-x-2 no-underline font-bold'>
+                                    <NavLink to='/post' 
+                                    className='text-gray-900 hover:text-blue-900 hover:underline '> Blog </NavLink>
+                                    <span className='mt-1'>{'>'}</span>
+                                </h2>
+                                <div className='prose text-base mt-2 md:mt-4 lg:mt-6 md:prose-lg'>
+                                    <p>
+                                    A few of the projects I've developed and collaborated on. I currently work as a freelance developer specialized in React, JavaScript and all things
+                                    </p>
+                                </div>
+                            </Roll>
                         </div>
                     </li>
                     <li style={{opacity: 1, transform: 'none'}}>
                         <div className=' font-sans'>
-                            <h2 className='flex items-center text-2xl space-x-2 no-underline font-bold'>
-                                <NavLink to='/about' 
-                                className='text-gray-900 hover:text-blue-900 hover:underline '> About </NavLink>
-                                <span className='mt-1'>></span>
-                            </h2>
-                            <div className='prose text-base mt-2 md:mt-4 lg:mt-6 md:prose-lg'>
-                                <p>
-                                A few of the projects I've developed and collaborated on. I currently work as a freelance developer specialized in React, JavaScript and all things
-                                </p>
-                            </div>
+                            <Roll left ssrFadeout>
+                                <h2 className='flex items-center text-2xl space-x-2 no-underline font-bold'>
+                                    <NavLink to='/about' 
+                                    className='text-gray-900 hover:text-blue-900 hover:underline '> About </NavLink>
+                                    <span className='mt-1'>{'>'}</span>
+                                </h2>
+                                <div className='prose text-base mt-2 md:mt-4 lg:mt-6 md:prose-lg'>
+                                    <p>
+                                    A few of the projects I've developed and collaborated on. I currently work as a freelance developer specialized in React, JavaScript and all things
+                                    </p>
+                                </div>
+                            </Roll>
                         </div>
                     </li>
                 </ul>
