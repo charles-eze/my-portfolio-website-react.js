@@ -15,7 +15,7 @@ export default function Home() {
                     <h1 className='relative z-10 mt-8 text-4xl font-semibold leading-tight text-gray-800 font-header md:text-6xl lg:text-6xl lg:font-medium xl:text-6xl md:mt-16 xl:mt-24'>
                         <span>Hi, I am Charles!</span>
                     </h1>
-                    <div className='relative left-0 z-0 -mt-2 -ml-3 w-11/12 md:w-5/6 h-4 md:h-6 xl:h-10 lg:h-8 bottom-2 rounded-full bg-purple-200'></div>
+                    <div className='relative left-0 z-0 -mt-2 -ml-3 w-11/12 md:w-5/6 h-4 md:h-6 xl:h-10 lg:h-8 bottom-2 rounded-full bg-purple-300'></div>
                 <div className='flex-grow mt-8 sm:justify-start md:justify-center sm:flex sm:mt-4 md:mt-9 lg:mt-6'>
                 </div>
                     <p className='prose prose-lg sm:prose-xl md:text-justify'>
