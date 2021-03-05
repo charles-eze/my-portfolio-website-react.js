@@ -1,59 +1,66 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import sanityClient from "../client.js";
+import imageUrlBuilder from "@sanity/image-url";
+import BlockContent from "@sanity/block-content-to-react";
+
+const builder = imageUrlBuilder(sanityClient);
+function urlFor(source) {
+    return builder.image(source)
+}
 
 export default function SinglePost() {
-    return <h1> SinglePost Page!</h1>
+    const [singlePost, setSinglePost] = useState(null);
+    const { slug } = useParams();
+
+    useEffect(() => {
+        sanityClient.fetch(`*[slug.current == "${slug}"] {
+            title,
+            _id,
+            slug,
+            mainImage{
+                asset->{
+                    _id,
+                    url
+                }
+            },
+            body,
+            "name": author->name,
+            "authorImage": author->image
+        }`).then((data) => setSinglePost(data[0]))
+        .catch(console.error);
+    }, [slug]);
+
+    if (!singlePost) return <div>Loading...</div>;
+
+
+    return (
+        <main className='bg-gray-200 min-h-screen p-12'>
+            <article className='container shadow-lg mx-auto bg-green-100 rounded-lg'>
+                <header className='relative'>
+                    <div className='absolute h-full w-full flex items-center justify-center p-8'>
+                        <div className='bg-white bg-opacity-75  rounded p-12'>
+                            <h1 className='cursive text-3xl lg:text-5xl mb-4'>{singlePost.title}</h1>
+                            <div className='flex justify-center text-gray-800'>
+                                <img  src={urlFor(singlePost.authorImage).url()}
+                                    alt={singlePost.name}
+                                    className='w=10 h-10 rounded-full' />
+                                <p className='cursive flex items-center pl-2 text-2xl'></p>
+                            </div>
+                        </div>
+                    </div>
+                    <img 
+                        src={singlePost.mainImage.asset.url} 
+                        alt={singlePost.title}
+                        className='w-full object-cover rounded-t'
+                        style={{ height: '400px' }} />
+                </header>
+                <div className='px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-fullnpm'>
+                    <BlockContent blocks={singlePost.body} projectId='uzvxymqh' dataset='production' />
+                </div>
+            </article>
+        </main>
+    );
+    
 };
 
-/*
-
-<header className="bg-gray-900 h-20 flex justify-center items-center text-lg sticky top-0 z-999 ">
-            <div className="flex">
-                <nav className="contents">
-                    <NavLink to="/" exact className="mr-96 text-white justify-self-start cursive cursor-pointer no-underline text-4xl flex items-center">
-                        CHARLES <i className="fas fa-code ml-2 text-2x" />
-                    </NavLink>
-                    <div className="hidden" onClick={handleClick}>
-                        <i className={click ? "fas fa-times" : "fas fa-bars text-white"} />
-                    </div>
-                    <ul className={click ? "nav-menu active" : "grid grid-cols-5 gap-2.5 ml-11 list-none text-center justify-end mr-8"}>
-                        <li className="h-20">
-                            <NavLink to="/" exact onClick={closeMobileMenu}
-                                activeClassName="text-red-100 bg-purple-700 rounded-full py-3 px-6 border-b-2"
-                                className="text-white h-10 self-center border-fuchsia-600 flex items-center no-underline py-2 px-4 mt-5 mb-2 transition duration-500 ease-out transform hover:-translate-y-1 hover:scale-110">
-                                Portfolio
-                                </NavLink >
-                        </li>
-                        <li className="h-20">
-                            <NavLink to="/project" className="text-white h-10 self-center border-fuchsia-600 flex items-center no-underline py-2 px-4 mt-5 mb-2 transition duration-500 ease-out transform hover:-translate-y-1 hover:scale-110" 
-                                activeClassName="text-red-100 bg-purple-700 rounded-full py-3 px-6 border-b-2"
-                                onClick={closeMobileMenu}>
-                                Projects
-                            </NavLink>
-                        </li>
-                        <li className="h-20">
-                            <NavLink to="/post" className="text-white h-10 self-center border-fuchsia-600 flex items-center no-underline py-2 px-4 mt-5 mb-2 transition duration-500 ease-out transform hover:-translate-y-1 hover:scale-110"
-                                activeClassName="text-red-100 bg-purple-700 rounded-full py-3 px-6 border-b-2"
-                                onClick={closeMobileMenu}>
-                                Blog Posts
-                            </NavLink>
-                        </li>
-                        <li className="h-20">
-                            <NavLink to="/about" className="text-white h-10 self-center border-fuchsia-600 flex items-center no-underline py-2 px-4 mt-5 mb-2 transition duration-500 ease-out transform hover:-translate-y-1 hover:scale-110"
-                                activeClassName="text-red-100 bg-purple-700 rounded-full py-3 px-6 border-b-2"
-                                onClick={closeMobileMenu}>
-                                About Me
-                            </NavLink>
-                        </li>
-                        <li className="h-20">
-                            <NavLink to="/contact" className="text-white h-10 self-center border-fuchsia-600 flex items-center no-underline py-2 px-4 mt-5 mb-2 transition duration-500 ease-out transform hover:-translate-y-1 hover:scale-110"
-                                onClick={closeMobileMenu}
-                                activeClassName="text-red-100 bg-purple-700 rounded-full py-3 px-6 border-b-2">
-                                Contact Me
-                            </NavLink>
-                        </li>
-                    </ul>
-                   
-
-                </nav>
-            </div>
-        </header> */

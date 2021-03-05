@@ -20,15 +20,15 @@ export default function Project() {
 
     return (
         <div>
-            <main className='bg-purple-200 min-h-screen p-12'>
+            <main className='bg-purple-300 min-h-screen p-12'>
                 <section className='container mx-auto cursor:pointer'>
                     <h1 className='text-5xl flex justify-center cursive'>My Projects</h1>
-                    <h2 clasName='text-lg text-gray-600 flex justify-center mb-12 '>
+                    <h2 className='text-lg md:text-2xl text-gray-600 flex justify-center mb-12 font-sans'>
                         Welcome to my projects page!
                     </h2>
-                    <section className='grid md:grid-cols-2 gap-8'>
+                    <section className='grid md:grid-cols-2 md:gap-8 gap-4 -mx-3 md:-mx-0'>
                       {projectData && projectData.map((project, index) => (
-                        <article className='relative rounded-lg shadow-xl bg-white p-16'>
+                        <article className='relative rounded-lg shadow-xl bg-white md:p-16 px-3 py-6'>
                             <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
                                 <a 
                                 href={project.link}
@@ -54,9 +54,9 @@ export default function Project() {
                                 <a href={project.link}
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                className='text-red-500 font-bold hover:underline hover:text-red-400'> 
+                                className='text-red-500 font-bold md:text-lg text-sm hover:underline hover:text-purple-700'> 
                                 View The Project{" "}
-                                    <span role='img' aria-label='right pointer'>🛫</span> 
+                                    <span role='img' aria-label='right pointer'>{'>>'}</span> 
                                 </a>
                             </div>
                         </article>
