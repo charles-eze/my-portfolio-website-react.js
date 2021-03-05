@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import image from "../profile_pics1.jpg";
 import Contact from "./Contact";
@@ -41,8 +41,8 @@ export default function Home() {
                         <div className=' font-sans'>
                             <Roll left ssrFadeout>
                                 <h2 className='flex items-center text-2xl space-x-2 no-underline font-bold'>
-                                    <NavLink to='/project' 
-                                    className='text-gray-900 hover:text-blue-900 hover:underline '> Projects </NavLink>
+                                    <Link to='/project' 
+                                    className='text-gray-900 hover:text-purple-900 hover:underline '> Projects </Link>
                                     <span className='mt-1'>{'>'}</span>
                                 </h2>
                                 <div className='prose text-base mt-2 md:mt-4 lg:mt-6 md:prose-lg'>
@@ -57,8 +57,8 @@ export default function Home() {
                         <div className=' font-sans'>
                             <Roll right ssrFadeout>
                                 <h2 className='flex items-center text-2xl space-x-2 no-underline font-bold'>
-                                    <NavLink to='/post' 
-                                    className='text-gray-900 hover:text-blue-900 hover:underline '> Blog </NavLink>
+                                    <Link to='/post' 
+                                    className='text-gray-900 hover:text-blue-900 hover:underline '> Blog </Link>
                                     <span className='mt-1'>{'>'}</span>
                                 </h2>
                                 <div className='prose text-base mt-2 md:mt-4 lg:mt-6 md:prose-lg'>
@@ -73,8 +73,8 @@ export default function Home() {
                         <div className=' font-sans'>
                             <Roll left ssrFadeout>
                                 <h2 className='flex items-center text-2xl space-x-2 no-underline font-bold'>
-                                    <NavLink to='/about' 
-                                    className='text-gray-900 hover:text-blue-900 hover:underline '> About </NavLink>
+                                    <Link to='/about' 
+                                    className='text-gray-900 hover:text-blue-900 hover:underline '> About </Link>
                                     <span className='mt-1'>{'>'}</span>
                                 </h2>
                                 <div className='prose text-base mt-2 md:mt-4 lg:mt-6 md:prose-lg'>
