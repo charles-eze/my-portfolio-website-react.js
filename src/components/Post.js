@@ -40,8 +40,8 @@ export default function Post() {
                                 src={post.mainImage.asset.url}
                                 alt={post.mainImage.alt}
                                 className='w-full h-full rounded-r object-fill absolute' />
-                            <span className='block relative h-full flex justify-end items-end pr-4 pb-4'>
-                                <h3 className='text-gray-800 text-lg font-medium px-3 py-4 bg-indigo-600 hover:bg-gray-700 text-red-100 bg-opacity-80 rounded'>{post.title}</h3>
+                            <span className='relative h-full flex justify-end items-end pr-4 pb-4'>
+                                <h3 className='text-lg font-medium px-3 py-4 bg-indigo-600 hover:bg-gray-700 text-red-100 bg-opacity-80 rounded'>{post.title}</h3>
                                 <div className='absolute text-xs text-gray-900'>
                                     <strong className='font-bold'>Published on</strong>:{" "}
                                     {new Date(post.publishedAt).toLocaleDateString('en-GB')}

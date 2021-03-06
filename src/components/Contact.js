@@ -21,7 +21,7 @@ const Contact = () => {
                     <div className='text-lg md:w-1/2'>
                         <Fade left ssrFadeout>
                             <p className='react-reveal mb-6'>
-                                If you'd like to talk about a project or need advice about product and ideation , simply drop me a message. I'm currently available for development projects, entrepreneurial gigs or speaking events.
+                                If you'd like to talk about a project or need advice about product and ideation , simply send me a message. I'm currently available for development projects, entrepreneurial gigs or bug bounty events.
                             </p>
                             <div>
                                 <p className='mb-4'>You can connect with me on:</p>

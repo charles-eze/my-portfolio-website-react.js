@@ -15,7 +15,7 @@ export default function Home() {
                     <h1 className='relative z-10 mt-8 text-4xl font-semibold leading-tight text-gray-800 font-header md:text-6xl lg:text-6xl lg:font-medium xl:text-6xl md:mt-16 xl:mt-24'>
                         <span>Hi, I am Charles!</span>
                     </h1>
-                    <div className='relative left-0 z-0 -mt-2 -ml-3 w-11/12 md:w-5/6 h-4 md:h-6 xl:h-10 lg:h-8 bottom-2 rounded-full bg-purple-300'></div>
+                    <div className='relative left-0 z-0 -mt-2 -ml-3 w-11/12 md:w-5/6 h-4 md:h-6 lg:h-8 bottom-2 rounded-full bg-purple-300'></div>
                 <div className='flex-grow mt-8 sm:justify-start md:justify-center sm:flex sm:mt-4 md:mt-9 lg:mt-6'>
                 </div>
                     <p className='prose prose-lg sm:prose-xl md:text-justify'>
@@ -47,7 +47,7 @@ export default function Home() {
                                 </h2>
                                 <div className='prose text-base mt-2 md:mt-4 lg:mt-6 md:prose-lg'>
                                     <p>
-                                        A few of the projects I've developed and collaborated on. I currently work as a freelance developer specialized in React, JavaScript and all things
+                                        A few of the projects I've developed and collaborated on. I currently work as a frontend developer specialized in React and Tailwind CSS.
                                     </p>
                                 </div>
                             </Roll>
@@ -63,7 +63,7 @@ export default function Home() {
                                 </h2>
                                 <div className='prose text-base mt-2 md:mt-4 lg:mt-6 md:prose-lg'>
                                     <p>
-                                    A few of the projects I've developed and collaborated on. I currently work as a freelance developer specialized in React, JavaScript and all things
+                                        Some of my discoveries and programming nuggets through the course of learning. Opinions and bugs are mine.
                                     </p>
                                 </div>
                             </Roll>
@@ -79,7 +79,7 @@ export default function Home() {
                                 </h2>
                                 <div className='prose text-base mt-2 md:mt-4 lg:mt-6 md:prose-lg'>
                                     <p>
-                                    A few of the projects I've developed and collaborated on. I currently work as a freelance developer specialized in React, JavaScript and all things
+                                        A brief overview of my professional development including certificates obtained.
                                     </p>
                                 </div>
                             </Roll>
