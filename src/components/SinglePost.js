@@ -18,6 +18,7 @@ export default function SinglePost() {
             title,
             _id,
             slug,
+            publishedAt,
             mainImage{
                 asset->{
                     _id,
@@ -39,14 +40,18 @@ export default function SinglePost() {
             <div className='-mx-7'>
             <article className='container shadow-lg bg-gray-100 rounded-lg mx-auto'>
                 <header className='relative'>
-                    <div className='absolute h-full w-full flex items-center justify-center md:p-8'>
-                        <div className='bg-white bg-opacity-80 rounded p-3  md:p-12'>
-                            <h1 className='cursive text-3xl lg:text-5xl mb-4 '>{singlePost.title}</h1>
+                    <div className='absolute h-full w-full md:flex mt-32 mr-5 items-center justify-center md:p-8'>
+                        <div className='bg-white bg-opacity-80 rounded p-3 mx-7 md:p-12'>
+                            <h1 className='cursive text-center text-3xl lg:text-5xl mb-4 '>{singlePost.title}</h1>
                             <div className='flex justify-center text-gray-800'>
                                 <img  src={urlFor(singlePost.authorImage).url()}
                                     alt={singlePost.name}
                                     className='w=10 h-10 rounded-full' />
                                 <p className='cursive flex items-center pl-2 md:text-2xl text-xl'>{singlePost.name}</p>
+                                <span className='flex items-center pl-2 text-xs text-gray-900'>
+                                    <strong className='font-bold'>Published on</strong>:{" "}
+                                    {new Date(singlePost.publishedAt).toLocaleDateString('en-GB')}
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -56,7 +61,7 @@ export default function SinglePost() {
                         className='w-full object-fill  rounded-t'
                         style={{ height: '400px' }} />
                 </header>
-                <div className='px-4 lg:px-48 py-12 lg:py-20 prose lg:prose-xl prose-lg max-w-full'>
+                <div className='px-4 lg:px-48 pb-12 pt-7 lg:py-20 prose lg:prose-xl prose-lg max-w-full'>
                     <BlockContent blocks={singlePost.body} projectId='uzvxymqh' dataset='production' />
                 </div>
             </article>
