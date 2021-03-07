@@ -23,7 +23,7 @@ export default function Project() {
             <main className='bg-purple-300 min-h-screen p-12'>
                 <section className='container mx-auto cursor:pointer'>
                     <h1 className='text-5xl flex justify-center cursive'>My Projects</h1>
-                    <h2 className='text-lg md:text-2xl text-gray-600 flex justify-center mb-12 font-sans'>
+                    <h2 className='text-lg md:text-2xl text-gray-800 flex justify-center mb-12 font-sans'>
                         Welcome to my projects page!
                     </h2>
                     <section className='grid md:grid-cols-2 md:gap-8 gap-4 -mx-3 md:-mx-0'>

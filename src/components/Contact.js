@@ -21,7 +21,7 @@ const Contact = () => {
                     <div className='text-lg md:w-1/2'>
                         <Fade left ssrFadeout>
                             <p className='react-reveal mb-6'>
-                                If you'd like to talk about a project or need advice about product and ideation , simply send me a message. I'm currently available for development projects, entrepreneurial gigs or bug bounty events.
+                                If you'd like to talk about a project or need advice about product and ideation, simply send me a message. I'm currently available for development projects, entrepreneurial gigs or bug bounty events.
                             </p>
                             <div>
                                 <p className='mb-4'>You can connect with me on:</p>
@@ -54,11 +54,10 @@ const Contact = () => {
                     <div className='w-full md:w-1/2'>
                         <Fade right ssrFadeout>
                             <form className='w-full'
-                                method='POST'
+                                method='post'
                                 id='contact-form'
-                                name='contact-forms'>
-                                <input type='hidden' name='bot-field' />
-                                <input type='hidden' name='form-name' value='contact-forms' />
+                                name='contactmail'>
+                                <input type='hidden' name='form-name' value='contactmail' />
                                 <div className='flex flex-col space-y-6'>
                                     <input 
                                         type='email'

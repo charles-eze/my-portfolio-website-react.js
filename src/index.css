@@ -18,4 +18,12 @@
     font-size: 150px;
 }
 
+.height {
+    height: 300px;
+}
 
+@media only screen and (min-width: 768px) {
+    .height {
+        height: 400px;
+    }
+}

@@ -48,13 +48,13 @@ export default function About() {
                     </div>
                 </section>
                     <div className='md:px-14 md:pb-14 px-5 pb-9' style={{opacity: 1, transform: "none"}}>
-                        <section className='prose-lg md:prose-lg mt-10'>
+                        <section className='prose-lg md:prose-lg md:mt-10 -mt-7'>
                         <div>    
                             <Zoom left ssrFadeout>
                                 <h2 className='flex justify-center rounded-lg shadow-sm font-bold text-gray-700'>My Certificates</h2>
                                 <section className='grid md:grid-cols-3 md:gap-8 gap-4 -mx-3 md:-mx-0'>
                                 {aboutData && aboutData.map((about, index) => (
-                                    <article className='relative rounded-lg shadow-xl bg-white md:p-4 px-4 pb-6' key={index}>
+                                    <article className='relative -top-9 rounded-lg shadow-xl bg-white md:p-4 px-4 pb-6' key={index}>
                                         <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
                                             <a 
                                             href={about.link}
