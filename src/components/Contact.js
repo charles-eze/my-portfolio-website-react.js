@@ -54,7 +54,7 @@ const Contact = () => {
                     <div className='w-full md:w-1/2'>
                         <Fade right ssrFadeout>
                             <form className='w-full'
-                                method='post'
+                                method='POST'
                                 id='contact-form'
                                 name='contact-forms'>
                                 <input type='hidden' name='bot-field' />

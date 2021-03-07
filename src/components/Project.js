@@ -28,7 +28,7 @@ export default function Project() {
                     </h2>
                     <section className='grid md:grid-cols-2 md:gap-8 gap-4 -mx-3 md:-mx-0'>
                       {projectData && projectData.map((project, index) => (
-                        <article className='relative rounded-lg shadow-xl bg-white md:p-16 px-3 py-6'>
+                        <article className='relative rounded-lg shadow-xl bg-white md:p-16 px-3 py-6' key={index}>
                             <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
                                 <a 
                                 href={project.link}
