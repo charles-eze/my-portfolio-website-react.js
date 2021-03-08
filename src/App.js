@@ -8,6 +8,7 @@ import Project from "./components/Project";
 import NavBar from "./components/NavBar";
 import Contact from "./components/Contact";
 import Dropdown from "./components/Dropdown";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <ScrollToTop />
     <NavBar handleClick={handleClick} click={click} changePath={changePath} />
     <Dropdown handleClick={handleClick} click={click} closeMobileMenu={closeMobileMenu} />
       <Switch>

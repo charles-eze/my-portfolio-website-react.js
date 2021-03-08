@@ -32,7 +32,11 @@ export default {
         },
         },
         {
-            name: "link",
+            name: "githublink",
+            type: "url",
+        },
+        {
+            name: "livedemolink",
             type: "url",
         },
         {

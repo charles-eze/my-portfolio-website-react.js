@@ -12,7 +12,8 @@ export default function Project() {
             place,
             description,
             projectType,
-            link,
+            githublink,
+            livedemolink,
             tags
         }`).then((data) => setProjectData(data))
            .catch(console.error); 
@@ -20,7 +21,7 @@ export default function Project() {
 
     return (
         <div>
-            <main className='bg-purple-300 min-h-screen p-12'>
+            <main className='bg-purple-300 min-h-screen md:p-12 px-6 py-10'>
                 <section className='container mx-auto cursor:pointer'>
                     <h1 className='text-5xl flex justify-center cursive'>My Projects</h1>
                     <h2 className='text-lg md:text-2xl text-gray-800 flex justify-center mb-12 font-sans'>
@@ -31,7 +32,7 @@ export default function Project() {
                         <article className='relative rounded-lg shadow-xl bg-white md:p-16 px-3 py-6' key={index}>
                             <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
                                 <a 
-                                href={project.link}
+                                href={project.githublink}
                                 alt={project.title}
                                 target="_blank"
                                 rel="noopener noreferrer">{project.title}</a>
@@ -51,12 +52,19 @@ export default function Project() {
                                 </span>
                                 <p className='my-6 text-lg text-gray-700 leading-relaxed'>
                                     {project.description}</p>
-                                <a href={project.link}
+                                <a href={project.githublink}
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                className='text-red-500 font-bold md:text-lg text-sm hover:underline hover:text-purple-700'> 
-                                View The Project{" "}
-                                    <span role='img' aria-label='right pointer'>{'>>'}</span> 
+                                className='text-red-500 font-bold md:text-lg text-sm hover:text-purple-700'> 
+                                View Github Repo{" "}
+                                    <span>{'>>'}</span> 
+                                </a>
+                                <a href={project.livedemolink}
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                className='text-red-500 font-bold md:text-lg text-sm hover:text-purple-700'> 
+                                View Live Demo{" "}
+                                    <span>{'>>'}</span> 
                                 </a>
                             </div>
                         </article>
