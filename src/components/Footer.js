@@ -3,8 +3,8 @@ import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
     return (
-        <footer className='flex justify-between items-center h-16 bg-gray-700 font-normal text-sm md:text-base fixed z-10 lg:text-base text-white bottom-0 w-full'>
-            <p className='lg:ml-14 ml-2'> <i className="far fa-copyright text-base"></i>{new Date().getFullYear()}, Charles Eze</p>
+        <footer className='flex -mt-10 justify-between items-center h-16  bg-gray-700 font-normal text-sm md:text-base relative z-10 lg:text-base text-white bottom-0 w-full'>
+            <p className='lg:ml-14 ml-2'> <i className="far fa-copyright text-sm mr-1.5"></i>{new Date().getFullYear()}, Charles Eze</p>
             <div className='lg:mr-20 mr-2'>
                 <SocialIcon 
                     url='https://www.linkedin.com/in/charles-eze-29432b17a/' 

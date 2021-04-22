@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 const Contact = () => {
     return (
-        <div className='flex-shrink-0 bg-gray-800 pb-8 md:pb-28'>
+        <div className='flex-shrink-0 bg-gray-800 pb-8 md:pb-20'>
             <footer className='px-10 pt-16 pb-5 mx-auto text-white max-w-7xl'>
                 <div className='mb-10 text-center md:mb-16'>
                     <Fade top ssrFadeout>

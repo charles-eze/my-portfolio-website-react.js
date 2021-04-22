@@ -123,7 +123,7 @@ export default function Home() {
                                     <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Jest</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Mocha</span>
+                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>MongoDB</span>
                                 </li>
                                 <li>
                                     <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>JavaScript</span>
