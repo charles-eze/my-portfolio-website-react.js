@@ -94,57 +94,57 @@ export default function Home() {
                             <h3 className='mb-2 font-bold text-lg text-center text-gray-800 sm:text-xl md:text-2xl font-header'>
                                 TECHNOLOGIES I WORK WITH
                             </h3>
-                            <ul className='flex flex-wrap justify-center'>
+                            <ul className='flex flex-wrap justify-center select-none'>
                                 <li>
-                                    <span className='inline-flex transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Python 3</span>
+                                    <span className=' select-none inline-flex transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Python 3</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>React.js</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>React.js</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Pandas</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Pandas</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>SQL</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>SQL</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Sanity CMS</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Sanity CMS</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>GIT</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>GIT</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Burp Suite</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Burp Suite</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>CSS</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>CSS</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Jest</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Jest</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>MongoDB</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>MongoDB</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>JavaScript</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>JavaScript</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Enzyme</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Enzyme</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Express.js</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Express.js</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Node.js</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Node.js</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Tailwind CSS</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Tailwind CSS</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Beautiful Soup</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Beautiful Soup</span>
                                 </li>
                                 <li>
-                                    <span className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Metasploit</span>
+                                    <span className=' select-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 inline-flex items-center px-3 py-0.5 lg:py-1 lg:px-4 rounded-full text-sm lg:text-base font-medium leading-5 mt-4 mx-2 bg-purple-500 text-white'>Metasploit</span>
                                 </li>
                             </ul>
 

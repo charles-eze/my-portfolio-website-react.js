@@ -11,7 +11,7 @@ export default function NavBar({ click, handleClick }) {
                 CHARLES
             </NavLink>
             <div onClick={handleClick} className='px-4 cursor-pointer lg:hidden select-none'>
-                <i className={click ? "fas fa-times text-gray-400 text-2xl md:text-3xl relative float-right flex" : "fas fa-bars text-gray-400 text-2xl md:text-3xl "}/>
+                <i className={click ? "fas fa-times text-gray-400  select-none text-2xl md:text-3xl relative float-right flex" : "fas fa-bars text-gray-400 text-2xl  select-none md:text-3xl "}/>
             </div>
             <div className='pr-8 lg:block hidden'>
                 <NavLink className='px-4 py-1 hover:bg-purple-500 hover:text-white rounded-full' 

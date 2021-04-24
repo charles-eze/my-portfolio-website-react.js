@@ -23,14 +23,14 @@ export default function Project() {
         <div>
             <main className='bg-purple-300 min-h-screen md:p-12 px-6 py-10 mt-16'>
                 <section className='container mx-auto cursor:pointer'>
-                    <h1 className='text-5xl flex justify-center cursive'>My Projects</h1>
+                    <h1 className='text-2xl md:text-3xl flex justify-center cursive'>My Projects</h1>
                     <h2 className='text-lg md:text-2xl text-gray-800 flex justify-center mb-12 font-sans'>
                         Welcome to my projects page!
                     </h2>
                     <section className='grid lg:grid-cols-2 md:gap-8 gap-4 -mx-3 md:-mx-0'>
                       {projectData && projectData.map((project, index) => (
                         <article className='relative rounded-lg shadow-xl bg-white md:p-16 px-3 py-6' key={index}>
-                            <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
+                            <h3 className='text-gray-800 text-xl md:text-3xl font-bold mb-2 hover:text-red-700'>
                                 <a 
                                 href={project.githublink}
                                 alt={project.title}
@@ -50,7 +50,7 @@ export default function Project() {
                                     <strong className='font-bold'>Type</strong>:{" "}
                                     {project.projectType}
                                 </span>
-                                <p className='my-6 text-lg text-gray-700 leading-relaxed'>
+                                <p className='my-6 text-base md:text-lg text-gray-700 leading-relaxed'>
                                     {project.description}</p>
                                 <a href={project.githublink}
                                 rel="noopener noreferrer"
