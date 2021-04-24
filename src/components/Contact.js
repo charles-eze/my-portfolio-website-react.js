@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
 import Fade from 'react-reveal/Fade';
 
 const Contact = () => {
+    const [contactmail, setContactmail] = useState('');
+    const [message, setMessage] = useState('');
+
     return (
         <div className='flex-shrink-0 bg-gray-800 pb-8 md:pb-20'>
-            <footer className='px-10 pt-16 pb-5 mx-auto text-white max-w-7xl'>
+            <footer className='px-10 pt-20 pb-5 mx-auto text-white max-w-7xl'>
                 <div className='mb-10 text-center md:mb-16'>
                     <Fade top ssrFadeout>
                         <h4 className='antialiased font-header text-xl text-yellow-400'>
@@ -64,12 +67,16 @@ const Contact = () => {
                                         required aria-label='Email'
                                         name='email'
                                         placeholder='Enter your email'
+                                        value={contactmail}
+                                        onChange={e => setContactmail(e.target.value)}
                                         className='w-full px-5 py-3 text-base leading-6 text-gray-900 placeholder-gray-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md appearance-none focus:outline-none focus:placeholder-gray-400' />
                                     <textarea
                                         required aria-label='Message'
                                         name='message'
-                                        placeholder='How can I help you?'
-                                        className='w-full px-5 py-3 text-base leading-6 text-gray-900 placeholder-gray-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md appearance-none focus:outline-none focus:placeholder-gray-400'>
+                                        placeholder='Type a message here...'
+                                        value={message}
+                                        onChange={e => setMessage(e.target.value)}
+                                        className='w-full px-5 py-3 text-base leading-6 text-gray-900 placeholder-gray-500 bg-white border border-transparent rounded-md appearance-none focus:outline-none focus:placeholder-gray-400'>
                                     </textarea>
                                     <div className='rounded-md shadow'>
                                         <button 

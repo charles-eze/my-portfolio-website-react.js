@@ -36,7 +36,7 @@ export default function SinglePost() {
 
 
     return (
-        <main className='bg-purple-300 min-h-screen p-12'>
+        <main className='bg-purple-300 min-h-screen p-12 mt-16'>
             <div className='-mx-7'>
             <article className='container shadow-lg bg-gray-100 rounded-lg mx-auto'>
                 <header className='relative'>

@@ -9,7 +9,7 @@ import Roll from 'react-reveal/Roll';
 export default function Home() {
     return (
         <main className='flex-grow'>
-            <section className='px-6 mx-auto lg:px-0 max-w-xl lg:max-w-3xl'>
+            <section className='px-6 mx-auto lg:px-0 max-w-xl lg:max-w-3xl mt-20 xl:mt-5'>
                 <div className='flex items-center sm:space-x-10 md:space-x-0'>
                 <div className='relative inline-block mb-6 md:mb-10 xl:mb-16'>
                     <h1 className='relative z-10 mt-8 text-4xl font-semibold leading-tight text-gray-800 font-header md:text-6xl lg:text-6xl lg:font-medium xl:text-6xl md:mt-16 xl:mt-24'>

@@ -21,7 +21,7 @@ export default function About() {
 
     return (
         <div>
-            <main className='flex-grow'>
+            <main className='flex-grow mt-16 xl:mt-4'>
                 <section className='px-6 mx-auto lg:px-0 max-w-xl lg:max-w-3xl '>
                     <div className='relative inline-block mb-6 md:mb-10'>
                         <h1 className='relative z-10 mt-8 text-4xl font-semibold leading-tight text-gray-800 font-header md:text-6xl lg:text-7xl lg:font-medium xl:text-7xl md:mt-16 xl:mt-24'>
@@ -37,7 +37,7 @@ export default function About() {
                                     className='text-blue-600 hover:text-blue-700 no-underline hover:underline'
                                     rel="noopener noreferrer"
                                     target="_blank">Lagos,</a>{" Nigeria."}</p>
-                                <p>After working for four years in the process industry as a process engineer, I now develop web applications and also test the security of web applications.</p>
+                                <p>After working for a few years in the process industry as a process engineer, I now develop web applications and also test the security of web applications. </p>
                                 <p>{"I am open to local, international and remote projects. "}
                                     <a
                                         href="#contact"
@@ -52,7 +52,7 @@ export default function About() {
                         <div>    
                             <Zoom left ssrFadeout>
                                 <h2 className='flex justify-center rounded-lg shadow-sm font-bold text-gray-700'>My Certificates</h2>
-                                <section className='grid md:grid-cols-3 md:gap-8 gap-4 -mx-3 md:-mx-0'>
+                                <section className='grid lg:grid-cols-3 lg:gap-8 gap-4 -mx-3 md:-mx-0'>
                                 {aboutData && aboutData.map((about, index) => (
                                     <article className='relative -top-9 rounded-lg shadow-xl bg-white md:p-4 px-4 pb-6' key={index}>
                                         <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
