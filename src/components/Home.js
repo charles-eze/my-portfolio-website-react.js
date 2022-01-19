@@ -20,7 +20,7 @@ export default function Home() {
                 </div>
                     <p className='prose prose-lg sm:prose-xl md:text-justify'>
                         <span className='hidden sm:inline-block pr-2'>My name is Charles Eze.</span>
-                        I am a self-taught software developer, focused on creating amazing user experiences utilizing high-performance web technologies.
+                        I am a software developer, focused on creating amazing user experiences utilizing high-performance web technologies.
                     </p>
                 </div>
                 </div>

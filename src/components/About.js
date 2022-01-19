@@ -32,11 +32,11 @@ export default function About() {
                     <div className='cursor-pointer' style={{opacity: 1, transform: "none"}}>
                         <Zoom left ssrFadeout>
                             <div className='md:prose-xl prose-lg text-gray-700'>
-                                <p>{"My name is Charles Eze and I am a self taught software developer currently living in "}
-                                    <a href='https://en.wikipedia.org/wiki/Lagos'
+                                <p>{"My name is Charles Eze and I am a software developer currently living in "}
+                                    <a href='https://en.wikipedia.org/wiki/Adelaide'
                                     className='text-blue-600 hover:text-blue-700 no-underline hover:underline'
                                     rel="noopener noreferrer"
-                                    target="_blank">Lagos,</a>{" Nigeria."}</p>
+                                    target="_blank">Adelaide,</a>{" South Australia."}</p>
                                 <p>After working for a few years in the process industry as a process engineer, I now develop web applications and also test the security of web applications. </p>
                                 <p>{"I am open to local, international and remote projects. "}
                                     <a
